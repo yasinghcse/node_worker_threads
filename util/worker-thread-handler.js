@@ -7,7 +7,7 @@ parentPort.on("message", ({ sharedArray }) => {
     
     // convert to regular Array and perform merge sort
     const regularArr = Array.from(sharedArray);
-    mergeSort(regularArr)
+    mergeSort(regularArr);
 
     const endTime = new Date();
     console.log(`${endTime - startTime}ms taken by child ${workerData.type}`);

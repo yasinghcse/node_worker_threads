@@ -1,7 +1,7 @@
 const { Worker } = require("worker_threads");
 const { getSharedArray } = require("./util/common-util");
 
-const sharedArrayForWorker1 = getSharedArray(10000000); // 1 million
+const sharedArrayForWorker1 = getSharedArray(10000000); // 10 million
 const sharedArrayForWorker2 = getSharedArray(10000000); // 10 million
 let isWorker1Done = false;
 let isWorker2Done = false;
